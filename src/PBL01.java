@@ -3,6 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class PBL01 {
     public  static void main (String[] args){
+        // Laco de repeticao ate o usuario digitar N no final da funcao
         boolean continuar = true;
         while (continuar){
             try{
