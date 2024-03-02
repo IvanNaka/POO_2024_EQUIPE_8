@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class PBL02 {
     public  static void main (String[] args){
-        boolean desejaContinuar = true;
         int qtdJogadores = 5;
         int qtdFases = 3;
         String[] jogadoresLista;
@@ -30,6 +29,7 @@ public class PBL02 {
                 pontoFinal[j] += pontuacao;
             }
         }
+        boolean desejaContinuar = true;
         while (desejaContinuar) {
             try {
                 // Pergunta ao usuário a próxima ação
@@ -38,6 +38,7 @@ public class PBL02 {
                 System.out.println("1 - Por Jogadores.");
                 System.out.println("2 - Por Fase.");
                 System.out.println("3 - Por Maior Pontuação.");
+                System.out.println("4 - Rank Total dos Jogadores");
 
                 String escolhaUsuario = input.next();
 
@@ -79,7 +80,7 @@ public class PBL02 {
                         }
                         break;
                     case "3":
-                        // Rank Jogadores
+                        // Top do Rank
                         int topJogador = 0;
                         int pontoMaisAlto = 0;
                         for (int i = 0; i < qtdJogadores; i++) {
@@ -90,6 +91,13 @@ public class PBL02 {
                         }
                         System.out.println("-----------");
                         System.out.println("A pontuação mais alta é de: " + pontoMaisAlto + " pontos - Jogador: " + jogadoresLista[topJogador] + ".");
+                        break;
+                    case "4":
+                        System.out.println("-----------");
+                        System.out.println("Rank de Todos os Jogadores:");
+                        for (int i = 0; i < qtdJogadores; i++) {
+                            System.out.println("# " + jogadoresLista[i] + ": " + pontoFinal[i] + " pontos.");
+                        }
                         break;
                     default:
                         // Caso o input nao tenha sido mapeado estoura uma excecao
