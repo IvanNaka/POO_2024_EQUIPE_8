@@ -88,6 +88,7 @@ public class PBL02 {
                                 pontoMaisAlto = pontoFinal[i];
                             }
                         }
+                        System.out.println("-----------");
                         System.out.println("A pontuação mais alta é de: " + pontoMaisAlto + " pontos - Jogador: " + jogadoresLista[topJogador] + ".");
                         break;
                     default:
