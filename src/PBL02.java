@@ -64,9 +64,9 @@ public class PBL02 {
                         int[] pontoFinalFase;
                         pontoFinalFase = new int[qtdJogadores];
                         System.out.println("Digite o número da Fase que você deseja consultar o Rank de Pontuação: ");
-                        System.out.println("# FASE 1.");
-                        System.out.println("# FASE 2.");
-                        System.out.println("# FASE 3.");
+                        for (int i=0; i<qtdFases; i++){
+                            System.out.println("# FASE " + (i+1) + ".");
+                        }
                         int faseConsulta = input.nextInt();
                         for (int i = 0; i < qtdJogadores; i++) {
                             for (int j = 0; j < faseConsulta; j++) {
