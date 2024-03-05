@@ -1,3 +1,5 @@
+package PBL01;
+
 import java.security.InvalidParameterException;
 import java.util.InputMismatchException;
 import java.util.Scanner;

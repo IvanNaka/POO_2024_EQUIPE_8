@@ -1,4 +1,4 @@
-// Criar um programa que calcula o fatorial de um número.
+package Lista01;// Criar um programa que calcula o fatorial de um número.
 import java.util.Scanner;
 public class exe8 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-// Criar um programa que simula o jogo pedra, papel e tesoura.
+package Lista01;// Criar um programa que simula o jogo pedra, papel e tesoura.
 import java.util.Random;
 import java.util.Scanner;
 public class exe7 {

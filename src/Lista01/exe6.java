@@ -1,3 +1,5 @@
+package Lista01;
+
 import java.util.Scanner;
 public class exe6 {
     public static void main(String[] args) {

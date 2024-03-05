@@ -1,3 +1,5 @@
+package PBL02;
+
 import java.security.InvalidParameterException;
 import java.util.Scanner;
 
