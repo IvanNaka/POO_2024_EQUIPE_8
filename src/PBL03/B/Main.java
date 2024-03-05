@@ -1,7 +1,5 @@
 package PBL03.B;
 
-import PBL03.B.Conta;
-
 import java.util.Scanner;
 import java.util.InputMismatchException;
 public class Main {
