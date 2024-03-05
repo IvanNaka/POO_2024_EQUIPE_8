@@ -9,18 +9,10 @@ public class Conta {
     void setNumeroTitular(int numeroTitular) {
         this.numeroTitular = numeroTitular;
     }
-    // Método Getter - Número da Conta
-    public int getNumeroTitular() {
-        return numeroTitular;
-    }
     // --------------------------------------
     // Método Setter - Titular da Conta
     void setNomeTitular(String nomeTitular) {
         this.nomeTitular = nomeTitular;
-    }
-    // Método Getter - Titular da Conta
-    public String getNomeTitular() {
-        return nomeTitular;
     }
     // --------------------------------------
     // Método Setter - Saldo da Conta
