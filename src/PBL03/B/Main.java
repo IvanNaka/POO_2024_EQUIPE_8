@@ -20,8 +20,8 @@ public class Main {
         double saldoTitular = inputUsuario.nextDouble();
         contaObj.setSaldoTitular(saldoTitular);
 
-        // Transformando o Double em String para que o ponto seja substítuido por uma vírgula - .2f coloca com duas casas decimais
         System.out.println("--------------------------------------------------");
+        // Transformando o Double em String para que o ponto seja substítuido por uma vírgula - .2f coloca com duas casas decimais
         System.out.println("Bem vindo " + contaObj.nomeTitular + ", seu Saldo é de: R$" + String.format("%.2f", contaObj.saldoTitular).replace('.', ',') + ".");
         // System.out.println("Bem vindo, " + contaObj.nomeTitular + ", seu Saldo é de: R$" + saldoTitular + ".");
 
