@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 public class Main {
     public  static void main (String[] args){
-        // método contrutor - instaciação da classe Conta para criar o objeto contaObj
+        // método contrutor - instanciação da classe Conta para criar o objeto contaObj
         Conta contaObj = new Conta();
         Scanner inputUsuario = new Scanner(System.in);
 
