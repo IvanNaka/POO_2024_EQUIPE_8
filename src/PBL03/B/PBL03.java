@@ -2,31 +2,23 @@ package PBL03.B;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-public class Main {
+public class PBL03 {
     public  static void main (String[] args){
-        // método contrutor - instanciação da classe Conta para criar o objeto contaObj
-        Conta contaObj = new Conta();
         Scanner inputUsuario = new Scanner(System.in);
-
         System.out.print("Digite o Número de sua Conta: ");
         int numeroTitular = inputUsuario.nextInt();
-        contaObj.setNumeroTitular(numeroTitular);
-
         System.out.print("Digite o Nome para o Titular da Conta: ");
         String nomeTitular = inputUsuario.next();
-        contaObj.setNomeTitular(nomeTitular);
-
         System.out.print("Digite o Saldo de sua Conta: ");
         double saldoTitular = inputUsuario.nextDouble();
-        contaObj.setSaldoTitular(saldoTitular);
 
+        // Instanciação da classe Conta, e utilizando seu construtor (que recebe 3 parâmetros), para criar o objeto contaObj
+        // Esses argumentos são usados pra iniciar os atributos da nova instância e recebem os valores fornecidos
+        Conta contaObj = new Conta(nomeTitular, numeroTitular, saldoTitular);
         System.out.println("--------------------------------------------------");
-        // Transformando o Double em String para que o ponto seja substítuido por uma vírgula - .2f coloca com duas casas decimais
-        System.out.println("Bem vindo " + contaObj.nomeTitular + ", seu Saldo é de: R$" + String.format("%.2f", contaObj.saldoTitular).replace('.', ',') + ".");
-        // System.out.println("Bem vindo, " + contaObj.nomeTitular + ", seu Saldo é de: R$" + saldoTitular + ".");
+        System.out.println("Bem vindo " + contaObj.getNome() + ", seu Saldo é de: R$" + String.format("%.2f", contaObj.getSaldo()).replace('.', ',') + ".");
 
         boolean continuar = true;
-
         while (continuar) {
             System.out.println("--------------------------------------------------");
             System.out.println("SELECIONE A OPÇÃO DESEJADA");
@@ -42,14 +34,14 @@ public class Main {
                         double valorDeposito = inputUsuario.nextDouble();
                         contaObj.depositar(valorDeposito);
                         System.out.println("--------------------------------------------------");
-                        System.out.println("Depósito realizado com Sucesso. \nSeu Novo saldo é de: R$" + contaObj.getSaldoTitular());
+                        System.out.println("Depósito realizado com Sucesso. \nSeu Novo saldo é de: R$" + contaObj.getSaldo());
                         break;
                     case 2:
                         System.out.println("Digite o valor do saque:");
                         double valorSaque = inputUsuario.nextDouble();
                         if (contaObj.retirar(valorSaque)) {
                             System.out.println("--------------------------------------------------");
-                            System.out.println("Saque realizado com Sucesso. \nSeu Novo saldo é de: R$" + contaObj.getSaldoTitular());
+                            System.out.println("Saque realizado com Sucesso. \nSeu Novo saldo é de: R$" + contaObj.getSaldo());
                         } else {
                             System.out.println("--------------------------------------------------");
                             System.out.println("Seu Saldo é Insuficiente. \nOperação Não Realizada.");
