@@ -1,4 +1,6 @@
-package PBL03;
+package PBL03.C;
+
+import PBL03.C.Conta;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

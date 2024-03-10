@@ -1,4 +1,4 @@
-package PBL03;
+package PBL03.C;
 
 public class Conta {
     private String _nomeTitular;
