@@ -12,11 +12,11 @@ public class PBL03 {
         System.out.print("Digite o Saldo de sua Conta: ");
         double saldoTitular = inputUsuario.nextDouble();
 
-        // Instanciação da classe Conta, utilizando seu construtor(que recebe 3 parâmetros), para criar o objeto contaObj
+        // Instanciação da classe Conta, utilizando seu construtor(3 parâmetros), para criar o objeto contaObj
         // Esses argumentos são usados pra iniciar os atributos da nova instância e recebem os valores fornecidos
         Conta contaObj = new Conta(nomeTitular, numeroTitular, saldoTitular);
         System.out.println("--------------------------------------------------");
-        System.out.println("Bem vindo " + contaObj.getNome() + ", seu Saldo é de: R$" + String.format("%.2f", contaObj.getSaldo()).replace('.', ',') + ".");
+        System.out.println("Bem vindo " + contaObj.getNome() + " (Conta Nº" + contaObj.getNumero() + ")" + ", seu Saldo é de: R$" + String.format("%.2f", contaObj.getSaldo()).replace('.', ',') + ".");
 
         boolean continuar = true;
         while (continuar) {
