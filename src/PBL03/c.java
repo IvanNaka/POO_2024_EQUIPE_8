@@ -14,6 +14,7 @@ public class c {
         this.saldo = saldoInicial;
     }
 
+    //criação do método sacar
     public boolean sacar(double valor){
         if (valor > 0 && valor <= saldo){
             saldo -= valor;
@@ -22,6 +23,8 @@ public class c {
             return false;
         }
     }
+
+    //criação do método depositar
     public void depositar(double valor){
         if (valor > 0){
             saldo += valor;

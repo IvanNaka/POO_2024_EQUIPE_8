@@ -16,12 +16,12 @@ public class PBL02 {
             String nomeJogador = input.next();
             jogadoresLista[i] = nomeJogador;
         }
-        int[][] pontosFase;
-        int[] pontoFinal;
-        pontosFase = new int[qtdFases][qtdJogadores];
-        pontoFinal = new int[qtdJogadores];
+        int[][] pontosFase; //criando uma matriz
+        int[] pontoFinal; //criando um vetor
+        pontosFase = new int[qtdFases][qtdJogadores]; //3 linhas com 5 colunas
+        pontoFinal = new int[qtdJogadores]; //apenas uma linha com 5 colunas
         // Input Pontuação Jogadores, por fase
-        for (int i=0; i<qtdFases; i++){
+        for (int i=0; i<qtdFases; i++){ //define o avanço do i
             System.out.println("-----------");
             System.out.println("# FASE " + (i+1));
             for (int j=0; j<qtdJogadores; j++){
