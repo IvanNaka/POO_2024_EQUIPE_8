@@ -1,7 +1,7 @@
 package PBL04.B;
 
 public class Conta {
-    private Pessoa nomeTitular;
+    private Pessoa Titular;
     private int _numero;
     private double _saldo;
 
@@ -27,7 +27,7 @@ public class Conta {
         this._saldo = saldo;
     }
     public Conta(Pessoa nomeTitular, int numero, double saldo){
-        this.nomeTitular = nomeTitular;
+        this.Titular = nomeTitular;
         this.setNumero(numero);
         this.setSaldo(saldo);
     }
