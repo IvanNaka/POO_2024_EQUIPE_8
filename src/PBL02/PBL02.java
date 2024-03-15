@@ -11,8 +11,8 @@ public class PBL02 {
         jogadoresLista = new String[qtdJogadores];
         Scanner input = new Scanner(System.in);
         // Input Nome Jogadores
-        for (int i=0; i<qtdJogadores; i++){
-            System.out.print("Digite o nome do Jogador " + (i+1) + ": ");
+        for (int i=0; i<qtdJogadores; i++){ // i++ é geralmente usado em loop pra incrementar o i em 1 a cada iteração do loop
+            System.out.print("Digite o nome do Jogador " + (i+1) + ": "); // i+1 ajusta o indice de 0 para 1
             String nomeJogador = input.next();
             jogadoresLista[i] = nomeJogador;
         }
