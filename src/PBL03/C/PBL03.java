@@ -9,6 +9,10 @@ import java.util.Scanner;
 public class PBL03 {
     public static void main (String[] args) {
         ArrayList<Conta> listaContas = new ArrayList<>();
+        // Instanciação para criação de uma ArrayList (dinâmica) de nome listaContas
+        // que armazena objetos do tipo Conta
+        // Armazena instâncias da classe Conta, cada elemento dessa lista é uma instância da classe Conta
+
         boolean continuar = true;
         Scanner input = new Scanner(System.in);
         while (continuar){
