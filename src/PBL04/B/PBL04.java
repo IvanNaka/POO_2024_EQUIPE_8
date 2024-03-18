@@ -22,6 +22,9 @@ public class PBL04 {
                         String nomeTitular = input.next();
                         System.out.println("Saldo inicial: ");
                         double saldo = input.nextDouble();
+                        // Cria uma PK pra cada nova conta criada
+                        // listaContas.size() retorna o numero de elementos da lista
+                        // Então, conta a qnt de contas e adiciona +1, criando uma Conta que irá receber o número 1 e assim sucessivamente
                         int numeroConta = listaContas.size() + 1;
                         Conta contaObj = new Conta(nomeTitular, numeroConta, saldo);
                         listaContas.add(contaObj);
@@ -29,9 +32,12 @@ public class PBL04 {
                         break;
                     case "2":
                         System.out.println("Qual conta será consultada?");
-                        int numeroSaldo = input.nextInt();
-                        Conta contaSaldo = listaContas.get(numeroSaldo-1);
-                        System.out.println("O saldo da conta " + numeroSaldo + " é " + "R$" + contaSaldo.getSaldo());
+                        int numeroContaConsulta  = input.nextInt();
+                        // Como o indice 0 vai ser usado, ele precisa percorrer a ArrayList e procurar o número da conta desejado -1
+                        // Acessa a lista 'listaContas' usando get pra pegar o elemento na posição -1.
+                        // A ação é armazenada em 'contaConsultaSaldo' que é do tipo Conta (é usada pra guardar uma istância da classe Conta, retornada pela lista 'listaContas'
+                        Conta contaConsultaSaldo = listaContas.get(numeroContaConsulta -1);
+                        System.out.println("O saldo da conta " + numeroContaConsulta  + " é " + "R$" + contaConsultaSaldo.getSaldo());
                         break;
                     case "3":
                         System.out.println("Qual conta será utilizada?");

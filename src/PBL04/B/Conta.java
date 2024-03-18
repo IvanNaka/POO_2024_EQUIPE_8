@@ -1,18 +1,9 @@
 package PBL04.B;
 
 public class Conta {
-    private Pessoa Titular;
+    private Pessoa _titular;
     private int _numero;
     private double _saldo;
-
-    // Métodos
-   // public String getTitular(){
-    //    return Pessoa;
-   // }
-    //public void setTitular(String nomeTitular){
-    //    this.Pessoa = nomeTitular;
-    // }
-
     public int getNumero(){
         return _numero;
     }
@@ -27,7 +18,7 @@ public class Conta {
         this._saldo = saldo;
     }
     public Conta(Pessoa nomeTitular, int numero, double saldo){
-        this.Titular = nomeTitular;
+        this._titular = nomeTitular;
         this.setNumero(numero);
         this.setSaldo(saldo);
     }
