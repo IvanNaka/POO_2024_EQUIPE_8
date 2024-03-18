@@ -23,9 +23,9 @@ public class PBL04 {
                         System.out.println("Saldo inicial: ");
                         double saldo = input.nextDouble();
                         int numeroConta = listaContas.size() + 1;
-                        Conta conta = new Conta(nomeTitular, numeroConta, saldo);
-                        listaContas.add(conta);
-                        System.out.println("Conta número " + conta.getNumero() + " criada com sucesso.");
+                        Conta contaObj = new Conta(nomeTitular, numeroConta, saldo);
+                        listaContas.add(contaObj);
+                        System.out.println("Conta número " + contaObj.getNumero() + " criada com sucesso.");
                         break;
                     case "2":
                         System.out.println("Qual conta será consultada?");
