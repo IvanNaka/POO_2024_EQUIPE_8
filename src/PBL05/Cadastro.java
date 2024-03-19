@@ -17,11 +17,11 @@ public class Cadastro {
     }
     // Método pra adicionar usuário
     public static void adicionarUsuario(String tipoUsuario, Usuarios novoUsuario) {
-        // Verifica se o tipo de usuário é válido
+        // Verifica se o tipo de usuário eh valido
         if (cadastroPessoas.containsKey(tipoUsuario)) {
-            // Obtém a lista de usuários do tipo especificado
+            // Pega a lista de usuários do tipo especificado
             List<Usuarios> usuariosLista = cadastroPessoas.get(tipoUsuario);
-            // Adiciona o novo usuário à lista de usuários
+            // Adiciona o novo usuário a lista de usuarios
             usuariosLista.add(novoUsuario);
         } else {
             System.out.println("Tipo de usuário inválido.");
@@ -30,11 +30,11 @@ public class Cadastro {
     public static void listarUsuarios() {
         // Percorre toda as chaves do HashMap 'cadastroPessoas'
         for (String tipo : cadastroPessoas.keySet()) {
-            // Imprimir o tipo de usuário
+            // Imprimir o tipo de usuario
             System.out.println("Usuários do tipo '" + tipo.toUpperCase() + "':");
             // Pega a lista de usuários do tipo atual
             List<Usuarios> usuarios = cadastroPessoas.get(tipo);
-            // Percorre a lista de usuários e imprimi as informações de cada um
+            // Percorre a lista de usuarios e imprimi as informações de cada um
             for (Usuarios usuario : usuarios) {
                 System.out.println("Nome: " + usuario.getNomeUsuario() + ", Número: " + usuario.getNumeroUsuario());
             }
@@ -42,7 +42,7 @@ public class Cadastro {
         }
     }
     public static void buscarUsuariosPorTipo(String tipo) {
-        // Verifica se o tipo de usuário está presente no Hash
+        // Verifica se o tipo de usuário ta presente no Hash
         if (cadastroPessoas.containsKey(tipo)) {
             // Pega a lista de usuários do tipo especificado
             List<Usuarios> usuarios = cadastroPessoas.get(tipo);
